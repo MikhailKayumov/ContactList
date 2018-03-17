@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family:  'Roboto Condensed', sans-serif;
+  color: rgb(121, 121, 121);
+  background-color: rgb(190, 190, 190);
+}
+input, button {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family:  'Roboto Condensed', sans-serif;
+  outline: none;
+}
+.container {
+  border: 5px solid rgb(121, 121, 121);
+  background-color: rgb(243, 240, 243);
+  border-radius: 10px;
+  overflow-y: scroll;
+  width: 800px;
+  height: 100vh;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.container::-webkit-scrollbar {width: 0;}
+.container {-ms-overflow-style: none;}
+.container h3 { 
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form-input, .contact-form-btn {
+  position: relative;
+  margin: 10px 0;
+  padding: 10px 15px;
+  width: 600px;
+  border-radius: 5px;
+  border: 3px solid rgb(121, 121, 121);  
+}
+.contact-form-btn {
+  margin-top: 25px;
+  background-color: rgb(121, 121, 121);
+  color: rgb(240, 240, 240);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition-property: color background-color;
+  transition: 0.25s ease-out;
+}
+.contact-form-btn:hover {
+  background-color: rgb(240, 240, 240);
+  color: rgb(121, 121, 121);
+}
+.contact-form-btn:active {
+  background-color: rgb(121, 121, 121);
+  color: rgb(240, 240, 240);
+}
+.contact-list {
+  text-align: center;
+  width: 600px;  
+}
+.contact-list-empty-text {
+  color: rgba(59, 59, 59, 0.74);
+}
+.contact-error {
+  font-size: 14px;
+  color: red;
+  display: none;
+}
+.contact-list-contact {
+  margin: 17px 0;
+  display: flex;
+  align-items: center;
+  width: 100%; 
+}
+.contact-list-contact-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(240, 240, 240);
+  background-color: rgb(136, 136, 136);
+}
+.contact-list-name {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 25px;
+  text-align: left;
+}
+.contact-list-name a {
+  margin-top: 15px;
+  text-decoration: none;
+  color: rgb(121, 121, 121);
+  transition: color 0.25s ease;
+}
+.contact-list-name a:hover {
+  color: rgba(121, 121, 121, 0.7);
+  text-decoration: underline;  
+}
+.contact-list-delete-btn {
+  margin-left: auto; 
+  display: block;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 50%;  
+  width: 35px;
+  height: 35px;
+  font-size: 25px;  
+  color: rgb(240, 240, 240);
+  background-color: rgb(185, 185, 185);
+  transition-property: color background-color;
+  transition: 0.15s ease;  
+}
+.contact-list-delete-btn:hover {
+  color: rgb(185, 185, 185);
+  background-color: rgb(240, 240, 240);
+}
+.contact-list-delete-btn:active {
+  color: rgb(240, 240, 240);
+  background-color: rgb(185, 185, 185);
+}

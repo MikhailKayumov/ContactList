@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Список контактов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="contact" class="contact">
+      <form action="#" id="contact-form" class="contact-form">
+        <input id="name" class="contact-form-input" type="text" name="name" placeholder="Имя">
+        <div id="name-error" class="contact-error">
+          Поле может содержать символы русского и английского алфавитов от 1 до 50 символов
+        </div>
+        <input id="last-name" class="contact-form-input" type="text" name="last-name" placeholder="Фамилия">
+        <div id="last-name-error" class="contact-error">
+          Поле может содержать символы русского и английского алфавитов от 1 до 50 символов
+        </div>        
+        <input id="phone" class="contact-form-input" type="text" name="phone" placeholder="+7(800)8008080">
+        <div id="phone-error" class="contact-error">
+          Поле должно иметь вид +7(999)0005511 или 8(999)0005511
+        </div>        
+        <button id="btn-add-contact" class="contact-form-btn">Добавить контакт</button>
+      </form>
+    </div>
+    <h3>Список контактов</h3>
+    <div id="contact-list" class="contact-list"></div>
+  </div>
+</body>
+</html>
